@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Fabien Dariel",
-  title: "Hi all, I'm Fabien",
+  title: "Salut à tous, je suis Fabien",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web with PHP / JavaScript / Reactjs and some other cool libraries and frameworks."
+    "Un développeur fullstack passioné et passionnant 🚀 avec une forte expérience sur la conception web avec PHP / JavaScript / Reactjs et d'autres super librairies et frameworks."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1THWzOus8s637-FulvtNK0Dh2CYX0qbEf/view?usp=drive_link", // Set to empty to hide the button
@@ -48,15 +48,15 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CURIOUS AND PASSIONATE FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "Ce que je fais",
+  subTitle: "DÉVELOPPEUR FULLSTACK CURIEUX ET PASSIONNÉ QUI SOUHAITE EXPLORER LE MAXIMUM DE TECHNOLGIES WEB MODERNES",
   skills: [
     emoji(
-      "⚡ Create complex and professional website"
+      "⚡ Concevoir et maintenir des logiciels complexes et professionnels"
     ),
-    emoji("⚡ Integration of third party services"),
+    emoji("⚡ Interagir avec des applications tierces (API)"),
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web applications"
+      "⚡ Developper des applications web responsive, modern et optimisées pour la sécurité."
     )
   ],
 
@@ -137,8 +137,8 @@ const educationInfo = {
       schoolName: "Université de Poitiers (France)",
       logo: require("./assets/images/universite-poitiers.png"),
       subHeader: "Brevet de technicien supérieur (DEC)",
-      duration: "September 2005 - June 2007",
-      desc: "Informatique de gestion .",
+      duration: "Septembre 2005 - Juin 2007",
+      desc: "Informatique de gestion",
       descBullets: [
         "Option Développeur d'application"
       ]
@@ -156,12 +156,20 @@ const techStack = {
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Programming",
+      Stack: "Base de données",
       progressPercentage: "70%"
     },
     {
       Stack: "Frontend/Design",
       progressPercentage: "60%"
+    },
+    {
+      Stack: "Conception/Gestion de projets",
+      progressPercentage: "50%"
+    },
+    {
+      Stack: "IT",
+      progressPercentage: "40%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -271,9 +279,9 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Formations et Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Formations, Certifications et autres choses cool que j'ai pu réaliser !",
 
   achievementsCards: [
     {
@@ -391,17 +399,17 @@ const podcastSection = {
 
 // Resume Section
 const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
+  title: "CV",
+  subtitle: "N'hésites pas à télécharger mon CV",
 
   // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contactes-moi ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Discutons ensemble d'un projet ou simplement souhaites-tu discuter ? Mon courriel est ouvert à tous.",
   number: "+1-(438) 528-3971",
   email_address: "fabien.dariel@gmail.com"
 };
