@@ -23,7 +23,7 @@ const greeting = {
   username: "Fabien Dariel",
   title: "Salut à tous, je suis Fabien",
   subTitle: emoji(
-    "Un développeur fullstack passioné et passionnant 🚀 avec une forte expérience sur la conception web avec PHP / JavaScript / Reactjs et d'autres super librairies et frameworks."
+    "Développeur fullstack passioné et passionnant 🚀 avec une forte expérience sur la conception web avec PHP / JavaScript / Reactjs et d'autres super librairies et frameworks."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1THWzOus8s637-FulvtNK0Dh2CYX0qbEf/view?usp=drive_link", // Set to empty to hide the button
@@ -36,7 +36,7 @@ const socialMediaLinks = {
   github: "https://github.com/fabiendariel",
   linkedin: "https://www.linkedin.com/in/fabien-dariel-5915903b/",
   gmail: "fabien.dariel@gmail.com",
-  gitlab: "https://gitlab.com/fabiendariel",
+  //gitlab: "https://gitlab.com/fabiendariel",
   facebook: "https://www.facebook.com/fabien.dariel.7",
   //medium: "https://medium.com/@saadpasta",
   //stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
@@ -184,7 +184,7 @@ const workExperiences = {
       role: "Développeur Fullstack",
       company: "Gestion Juste Pour Rire",
       companylogo: require("./assets/images/juste-pour-rire.png"),
-      date: "Mai 2023 – June 2024",
+      date: "Mai 2023 – Juin 2024",
       desc: "Drupal, Wordpress, PHP, CSS, JS vanilla, AWS, GCP, API Google / Pixel, Symfony",
       descBullets: [
         "Collaborer pour définir et planifier la transition entre l’outil logiciel en place vers une nouvelle version utilisant Symfony/JS et un CMS d’intégration de contenus adapté à l’usage par des non-initiés à l’intégration web",
@@ -198,7 +198,7 @@ const workExperiences = {
       role: "Développeur web",
       company: "Webhelp Medica",
       companylogo: require("./assets/images/webhelp-medica.png"),
-      date: "July 2012 – April 2023",
+      date: "Juillet 2012 – Avril 2023",
       desc: "Symfony 1.4 et 3 avec en Backend Apache, PHP5/7 et MSSQL et en Frontend JS/JQuery/Bootstrap, HTML5/CSS3/Twig",
       descBullets: [
         "Développer des applications internes pour la gestion de prises et suivi de commandes au sein d’un call-center",
@@ -210,7 +210,7 @@ const workExperiences = {
       role: "Ingénieur développement logiciel",
       company: "Alveos",
       companylogo: require("./assets/images/alveos.png"),
-      date: "July 2010 – March 2012",
+      date: "Juillet 2010 – Mars 2012",
       desc: "Symfony 1, Drupal, JS et HTML/CSS",
       descBullets: [
         "Analyse fonctionnelle détaillée des besoins utilisateurs, étude de faisabilité technologique et rédaction du cahier des charges.",
@@ -222,7 +222,7 @@ const workExperiences = {
       role: "Analyste programmeur Web",
       company: "Arobases",
       companylogo: require("./assets/images/arobases.png"),
-      date: "Januaray 2008 – July 2010",
+      date: "Janvier 2008 – Juillet 2010",
       desc: "PHP4, JS et HTML/CSS",
       descBullets: [
         "Développer des plateformes e-commerce basé sur architecture PHP4 et framework MVC propriétaire",
@@ -409,7 +409,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contactes-moi ☎️"),
   subtitle:
-    "Discutons ensemble d'un projet ou simplement souhaites-tu discuter ? Mon courriel est ouvert à tous.",
+    "Discutons ensemble d'un projet ou simplement souhaites-tu en savoir plus ? Mon courriel est ouvert à tous.",
   number: "+1-(438) 528-3971",
   email_address: "fabien.dariel@gmail.com"
 };
