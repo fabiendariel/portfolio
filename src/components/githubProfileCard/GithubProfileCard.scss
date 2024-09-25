@@ -54,8 +54,9 @@
   font-size: 19px;
 }
 
-.subTitle {
+#contact .subTitle {
   color: $subTitle;
+  width: 75%;
 }
 
 @media (max-width: 768px) {

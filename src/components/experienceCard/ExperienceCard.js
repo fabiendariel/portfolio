@@ -1,8 +1,10 @@
 import React, {useState, createRef} from "react";
 import "./ExperienceCard.scss";
 import ColorThief from "colorthief";
+import { useTranslation } from "react-i18next";
 
 export default function ExperienceCard({cardInfo, isDark}) {
+  const { t } = useTranslation();
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
 
@@ -24,7 +26,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
             key={i}
             className={isDark ? "subTitle dark-mode-text" : "subTitle"}
           >
-            {item}
+            {t(item)}
           </li>
         ))
       : null;

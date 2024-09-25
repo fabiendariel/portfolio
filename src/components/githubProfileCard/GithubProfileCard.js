@@ -4,21 +4,23 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {contactInfo, isHireable} from "../../portfolio";
 import emoji from "react-easy-emoji";
 import {Fade} from "react-reveal";
+import { useTranslation } from "react-i18next";
 
 export default function GithubProfileCard({prof}) {
+  const { t } = useTranslation();
   if (isHireable) {
-    prof.hireable = "Oui";
+    prof.hireable = "yes";
   } else {
-    prof.hireable = "Non";
+    prof.hireable = "no";
   }
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="contact">
-        <h1 className="prof-title">Tires-toi une bûche!</h1>
+        <h1 className="prof-title">{emoji(t(contactInfo.title))}</h1>
         <div className="row">
           <div className="main-content-profile">
             <div className="blog-header">
-              <p className="subTitle blog-subtitle">{contactInfo.subtitle}</p>
+              <p className="subTitle blog-subtitle">{t(contactInfo.subtitle)}</p>
             </div>
             <h2 className="bio-text">"{emoji(String(prof.bio))}"</h2>
             {prof.location !== null && (
@@ -43,7 +45,12 @@ export default function GithubProfileCard({prof}) {
             )}
             <div className="opp-div">
               <span className="desc-prof">
-                Ouver aux opportunitées: {prof.hireable}
+                {t("opportunities")}: {t(prof.hireable)}
+              </span>
+            </div>
+            <div className="opp-div">
+              <span className="desc-prof">
+                {t("phone")}: {contactInfo.number}
               </span>
             </div>
             <SocialMedia />

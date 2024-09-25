@@ -4,8 +4,11 @@ import AchievementCard from "../../components/achievementCard/AchievementCard";
 import {achievementSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import { useTranslation } from "react-i18next";
+import emoji from "react-easy-emoji";
 export default function Achievement() {
   const {isDark} = useContext(StyleContext);
+  const { t } = useTranslation();
   if (!achievementSection.display) {
     return null;
   }
@@ -21,7 +24,7 @@ export default function Achievement() {
                   : "heading achievement-heading"
               }
             >
-              {achievementSection.title}
+              {emoji(t(achievementSection.title))}
             </h1>
             <p
               className={
@@ -30,7 +33,7 @@ export default function Achievement() {
                   : "subTitle achievement-subtitle"
               }
             >
-              {achievementSection.subtitle}
+              {t(achievementSection.subtitle)}
             </p>
           </div>
           <div className="achievement-cards-div">
@@ -40,8 +43,8 @@ export default function Achievement() {
                   key={i}
                   isDark={isDark}
                   cardInfo={{
-                    title: card.title,
-                    description: card.subtitle,
+                    title: t(card.title),
+                    description: t(card.subtitle),
                     image: card.image,
                     imageAlt: card.imageAlt,
                     footer: card.footerLink

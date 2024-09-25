@@ -21,12 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Fabien Dariel",
-  title: "Salut à tous, je suis Fabien",
-  subTitle: emoji(
-    "Développeur fullstack passioné et passionnant 🚀 avec une forte expérience sur la conception web avec PHP / JavaScript / Reactjs et d'autres super librairies et frameworks."
-  ),
-  resumeLink:
-    "https://drive.google.com/file/d/1THWzOus8s637-FulvtNK0Dh2CYX0qbEf/view?usp=drive_link", // Set to empty to hide the button
+  title: "greetings_title",
+  subTitle: "greetings_subtitle",
+  resumeLink: "resumeLink", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -48,17 +45,9 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "Ce que je fais",
-  subTitle: "DÉVELOPPEUR FULLSTACK CURIEUX ET PASSIONNÉ QUI SOUHAITE EXPLORER LE MAXIMUM DE TECHNOLGIES WEB MODERNES",
-  skills: [
-    emoji(
-      "⚡ Concevoir et maintenir des logiciels complexes et professionnels"
-    ),
-    emoji("⚡ Interagir avec des applications tierces (API)"),
-    emoji(
-      "⚡ Developper des applications web responsive, modern et optimisées pour la sécurité."
-    )
-  ],
+  title: "skillsSection_title",
+  subTitle: "skillsSection_subTitle",
+  skills: ["skillsSection_skills1","skillsSection_skills2","skillsSection_skills3"],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -134,13 +123,13 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Université de Poitiers (France)",
+      schoolName: "schoolName",
       logo: require("./assets/images/universite-poitiers.png"),
-      subHeader: "Brevet de technicien supérieur (DEC)",
-      duration: "Septembre 2005 - Juin 2007",
-      desc: "Informatique de gestion",
+      subHeader: "subHeader",
+      duration: "duration",
+      desc: "desc",
       descBullets: [
-        "Option Développeur d'application"
+        "descBullets1"
       ]
     }
   ]
@@ -152,23 +141,23 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Backend", //Insert stack or technology you have experience in
+      Stack: "experienceStack1", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Base de données",
+      Stack: "experienceStack2",
       progressPercentage: "70%"
     },
     {
-      Stack: "Frontend/Design",
+      Stack: "experienceStack3",
       progressPercentage: "60%"
     },
     {
-      Stack: "Conception/Gestion de projets",
+      Stack: "experienceStack4",
       progressPercentage: "50%"
     },
     {
-      Stack: "IT",
+      Stack: "experienceStack5",
       progressPercentage: "40%"
     }
   ],
@@ -181,54 +170,54 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Développeur Fullstack",
-      company: "Gestion Juste Pour Rire",
+      role: "experiencerole1",
+      company: "experiencecompany1",
       companylogo: require("./assets/images/juste-pour-rire.png"),
-      date: "Mai 2023 – Juin 2024",
-      desc: "Drupal, Wordpress, PHP, CSS, JS vanilla, AWS, GCP, API Google / Pixel, Symfony",
+      date: "experiencedate1",
+      desc: "experiencedesc1",
       descBullets: [
-        "Collaborer pour définir et planifier la transition entre l’outil logiciel en place vers une nouvelle version utilisant Symfony/JS et un CMS d’intégration de contenus adapté à l’usage par des non-initiés à l’intégration web",
-        "Évaluer la faisabilité d’une transition en termes d’hébergement infonuagique entre AWS et Google Cloud Platform",
-        "Participer à la mise en place de contenus personnalisés sur les sites web du groupe pour la mise en avant d’événements et la promotion des festivals au fil de l’année en respectant des contraintes d’adaptabilité et de navigabilité multi-supports",
-        "Concevoir, développer et maintenir les sites web, en assurant un haut niveau de qualité et de performance",
-        "Gérer le suivi et la maintenance du catalogue des sous-domaines du groupe et de leur hébergement"
+        "experience1descBullets1",
+        "experience1descBullets2",
+        "experience1descBullets3",
+        "experience1descBullets4",
+        "experience1descBullets5"
       ]
     },
     {
-      role: "Développeur web",
-      company: "Webhelp Medica",
+      role: "experiencerole2",
+      company: "experiencecompany2",
       companylogo: require("./assets/images/webhelp-medica.png"),
-      date: "Juillet 2012 – Avril 2023",
-      desc: "Symfony 1.4 et 3 avec en Backend Apache, PHP5/7 et MSSQL et en Frontend JS/JQuery/Bootstrap, HTML5/CSS3/Twig",
+      date: "experiencedate2",
+      desc: "experiencedesc2",
       descBullets: [
-        "Développer des applications internes pour la gestion de prises et suivi de commandes au sein d’un call-center",
-        "Maintenir des applicatifs en production et améliorer leurs fonctionnalités Frontend et Backend",
-        "Concevoir des plateformes web (sites institutionnels, extranet sécurisés et programme de suivi médicalisés complet) pour le compte de clients de la compagnie"
+        "experience2descBullets1",
+        "experience2descBullets2",
+        "experience2descBullets3"
       ]
     },
     {
-      role: "Ingénieur développement logiciel",
-      company: "Alveos",
+      role: "experiencerole3",
+      company: "experiencecompany3",
       companylogo: require("./assets/images/alveos.png"),
-      date: "Juillet 2010 – Mars 2012",
-      desc: "Symfony 1, Drupal, JS et HTML/CSS",
+      date: "experiencedate3",
+      desc: "experiencedesc3",
       descBullets: [
-        "Analyse fonctionnelle détaillée des besoins utilisateurs, étude de faisabilité technologique et rédaction du cahier des charges.",
-        "Codage avec les langages de programmation HTML, CSS, JavaScript, PHP sous un CMS Drupal.",
-        "Contrôle du bon fonctionnement du site web et de la qualité de navigation."
+        "experience3descBullets1",
+        "experience3descBullets2",
+        "experience3descBullets3"
       ]
     },
     {
-      role: "Analyste programmeur Web",
-      company: "Arobases",
+      role: "experiencerole4",
+      company: "experiencecompany4",
       companylogo: require("./assets/images/arobases.png"),
-      date: "Janvier 2008 – Juillet 2010",
-      desc: "PHP4, JS et HTML/CSS",
+      date: "experiencedate4",
+      desc: "experiencedesc4",
       descBullets: [
-        "Développer des plateformes e-commerce basé sur architecture PHP4 et framework MVC propriétaire",
-        "Maintenir des modules de gestion backend.",
-        "Mettre en place plusieurs boutiques clientes (Frontend et Backend spécifiques).",
-        "Monter en compétences sur PHP4, JS et Ajax (dont les bibliothèques mootools, thickbox, jquery), XML, XHTML"
+        "experience4descBullets1",
+        "experience4descBullets2",
+        "experience4descBullets3",
+        "experience4descBullets4"
       ]
     }
   ]
@@ -245,49 +234,49 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "bigProjectstitle",
+  subtitle: "bigProjectssubtitle",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/drupal.webp"),
+      projectName: "Demo Drupal 10",
+      projectDesc: "bigProjectsprojectDesc1",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "bigProjectsprojectLink",
+          url: "https://drupal.fabiendariel.com/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/laravel.webp"),
+      projectName: "MyRental Agency",
+      projectDesc: "bigProjectsprojectDesc2",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "bigProjectsprojectLink",
+          url: "https://laravel.fabiendariel.com/"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Formations et Certifications 🏆 "),
+  title: "achievementSectiontitle",
   subtitle:
-    "Formations, Certifications et autres choses cool que j'ai pu réaliser !",
+    "achievementSectionsubtitle",
 
   achievementsCards: [
     {
-      title: "ReactJs",
+      title: "achievementsCardstitle1",
       subtitle:
-        "ReactJs Introduction",
+        "achievementsCardssubtitle1",
       image: require("./assets/images/orsys.png"),
       imageAlt: "Orsys Formations",
       footerLink: [
@@ -298,9 +287,9 @@ const achievementSection = {
       ]
     },
     {
-      title: "Maîtrise de Symfony 4",
+      title: "achievementsCardstitle2",
       subtitle:
-        "Approfondir la maîtrise du développement avec le framework Symfony 4.",
+        "achievementsCardssubtitle2",
       image: require("./assets/images/sensio_labs.png"),
       imageAlt: "Sensio Labs",
       footerLink: [
@@ -312,9 +301,9 @@ const achievementSection = {
     },
 
     {
-      title: "Javascript Orientée Objet",
+      title: "achievementsCardstitle3",
       subtitle:
-        "JavaScript, maîtriser la Programmation Orientée Objet",
+        "achievementsCardssubtitle3",
       image: require("./assets/images/orsys.png"),
       imageAlt: "Orsys Formations",
       footerLink: [
@@ -325,9 +314,9 @@ const achievementSection = {
       ]
     },
     {
-      title: "Maîtrise de Symfony 1.4",
+      title: "achievementsCardstitle4",
       subtitle:
-        "Approfondir la maîtrise du développement avec le framework Symfony 1.4.",
+        "achievementsCardssubtitle4",
       image: require("./assets/images/sensio_labs.png"),
       imageAlt: "Sensio Labs",
       footerLink: [
@@ -397,20 +386,11 @@ const podcastSection = {
   display: false // Set false to hide this section, defaults to true
 };
 
-// Resume Section
-const resumeSection = {
-  title: "CV",
-  subtitle: "N'hésites pas à télécharger mon CV",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
-};
-
 const contactInfo = {
-  title: emoji("Contactes-moi ☎️"),
+  title: "contactInfotitle",
   subtitle:
-    "Discutons ensemble d'un projet ou simplement souhaites-tu en savoir plus ? Mon courriel est ouvert à tous.",
-  number: "+1-(438) 528-3971",
+    "contactInfosubtitle",
+  number: "+1 (438) 528-3971",
   email_address: "fabien.dariel@gmail.com"
 };
 
@@ -440,6 +420,5 @@ export {
   podcastSection,
   contactInfo,
   twitterDetails,
-  isHireable,
-  resumeSection
+  isHireable
 };

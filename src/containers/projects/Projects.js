@@ -4,7 +4,10 @@ import Button from "../../components/button/Button";
 import {openSource, socialMediaLinks} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
-export default function Projects() {
+import { useTranslation } from "react-i18next";
+
+export default function Projects() { 
+  const { t } = useTranslation();
   const GithubRepoCard = lazy(() =>
     import("../../components/githubRepoCard/GithubRepoCard")
   );
@@ -46,7 +49,7 @@ export default function Projects() {
     return (
       <Suspense fallback={renderLoader()}>
         <div className="main" id="opensource">
-          <h1 className="project-title">Démos Open Source</h1>
+          <h1 className="project-title">{t("os_project")}</h1>
           <div className="repo-cards-div-main">
             {repo.map((v, i) => {
               if (!v) {

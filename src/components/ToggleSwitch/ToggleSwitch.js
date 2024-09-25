@@ -14,6 +14,7 @@ const ToggleSwitch = () => {
         type="checkbox"
         checked={isDark}
         onChange={() => {
+          console.log('bob')
           styleContext.changeTheme();
           setChecked(!isChecked);
         }}
@@ -24,4 +25,4 @@ const ToggleSwitch = () => {
     </label>
   );
 };
-export default ToggleSwitch;
+export default ToggleSwitch; 

@@ -10,11 +10,13 @@ import {
   openSource,
   blogSection,
   talkSection,
-  achievementSection,
-  resumeSection
+  achievementSection
 } from "../../portfolio";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 function Header() {
+  const { t } = useTranslation();
   const {isDark} = useContext(StyleContext);
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
@@ -22,8 +24,7 @@ function Header() {
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
-  const viewResume = resumeSection.display;
-
+  
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
@@ -43,22 +44,22 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Compétences</a>
+              <a href="#skills">{t("skills")}</a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Experience pro.</a>
+              <a href="#experience">{t("experience")}</a>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#opensource">{t("opensource")}</a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Accomplissements</a>
+              <a href="#achievements">{t("achievements")}</a>
             </li>
           )}
           {viewBlog && (
@@ -71,13 +72,11 @@ function Header() {
               <a href="#talks">Talks</a>
             </li>
           )}
-          {viewResume && (
-            <li>
-              <a href="#resume">CV</a>
-            </li>
-          )}
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">{t("contact")}</a>
+          </li>          
+          <li> 
+            <LanguageSwitcher />
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

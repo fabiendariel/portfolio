@@ -3,8 +3,10 @@ import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import { useTranslation } from "react-i18next";
 
 export default function StartupProject() {
+  const { t } = useTranslation();
   function openUrlInNewTab(url) {
     if (!url) {
       return;
@@ -21,7 +23,7 @@ export default function StartupProject() {
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="projects">
         <div>
-          <h1 className="skills-heading">{bigProjects.title}</h1>
+          <h1 className="skills-heading">{t(bigProjects.title)}</h1>
           <p
             className={
               isDark
@@ -29,7 +31,7 @@ export default function StartupProject() {
                 : "subTitle project-subtitle"
             }
           >
-            {bigProjects.subtitle}
+            {t(bigProjects.subtitle)}
           </p>
 
           <div className="projects-container">
@@ -63,7 +65,7 @@ export default function StartupProject() {
                         isDark ? "dark-mode card-subtitle" : "card-subtitle"
                       }
                     >
-                      {project.projectDesc}
+                      {t(project.projectDesc)}
                     </p>
                     {project.footerLink ? (
                       <div className="project-card-footer">
@@ -76,7 +78,7 @@ export default function StartupProject() {
                               }
                               onClick={() => openUrlInNewTab(link.url)}
                             >
-                              {link.name}
+                              {t(link.name)}
                             </span>
                           );
                         })}

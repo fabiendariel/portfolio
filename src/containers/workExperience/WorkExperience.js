@@ -4,8 +4,10 @@ import ExperienceCard from "../../components/experienceCard/ExperienceCard";
 import {workExperiences} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import { useTranslation } from "react-i18next";
 
 export default function WorkExperience() {
+  const { t } = useTranslation();
   const {isDark} = useContext(StyleContext);
   if (workExperiences.display) {
     return (
@@ -21,11 +23,11 @@ export default function WorkExperience() {
                       key={i}
                       isDark={isDark}
                       cardInfo={{
-                        company: card.company,
-                        desc: card.desc,
-                        date: card.date,
+                        company: t(card.company),
+                        desc: t(card.desc),
+                        date: t(card.date),
                         companylogo: card.companylogo,
-                        role: card.role,
+                        role: t(card.role),
                         descBullets: card.descBullets
                       }}
                     />
