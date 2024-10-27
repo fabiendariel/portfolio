@@ -259,6 +259,17 @@ const bigProjects = {
           url: "https://laravel.fabiendariel.com/"
         }
       ]
+    },
+    {
+      image: require("./assets/images/memory.webp"),
+      projectName: "Magic Match",
+      projectDesc: "bigProjectsprojectDesc3",
+      footerLink: [
+        {
+          name: "bigProjectsprojectLink",
+          url: "https://fabiendariel.com/memory/"
+        }
+      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
